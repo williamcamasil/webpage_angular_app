@@ -1,27 +1,65 @@
-# Application
+# Material Components
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.0.
+#### Links
 
-## Development server
+- [material](https://material.angular.io/components/expansion/overview)
+- [help add browserAnimationsModule](https://stackoverflow.com/questions/43241193/found-the-synthetic-property-panelstate-please-include-either-browseranimati)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### Depedência
 
-## Build
+[Material - Get Started](https://material.angular.io/guide/getting-started)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+````
+ng add @angular/material
+````
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+#### Criação de **Componente**
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+- ```
+  ng g c components/template/mat-expand
+  ```
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+#### Arquivo app.modulo.ts
+
+Inserido imports (BrowserAnimationsModule / MatExpandComponent / MatExpansionModule)
+
+```ts
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+
+import { MatExpandComponent } from './components/template/mat-expand/mat-expand.component';
+
+import { MatExpansionModule } from '@angular/material/expansion';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    //novos components / páginas
+    MatExpandComponent
+  ],
+  imports: [
+    BrowserModule,
+    //novos modulos do material
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    MatExpansionModule,
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+```
+
+**OBS:** Não estava funcionando o MatExpansionModule até inserir o BrowserAnimationsModule, a qual identifiquei o erro no console do Browser.
+
