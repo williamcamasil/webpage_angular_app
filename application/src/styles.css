@@ -2,3 +2,20 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.backdropBackground {
+  background: #000000;
+  opacity: 0.6 !important;
+}
+
+.mat-dialog-container {
+  border-radius: 24px !important;
+}
+
+.mat-expansion-panel .mat-expansion-indicator::after {
+  transform: rotate(45deg);
+}
+
+.mat-expansion-panel .mat-expanded .mat-expansion-indicator::after {
+  transform: rotate(135deg);
+}
