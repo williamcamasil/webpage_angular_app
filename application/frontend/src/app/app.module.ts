@@ -6,9 +6,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/template/header/header.component';
 
-import { MatToolbarModule } from '@angular/material/toolbar';
+// import { MatToolbarModule } from '@angular/material/toolbar';
 import { FooterComponent } from './components/template/footer/footer.component';
-import { NavComponent } from './components/template/nav/nav.component';
+// import { NavComponent } from './components/template/nav/nav.component';
 
 import { MatSidenavModule } from  '@angular/material/sidenav';
 import { MatCardModule } from  '@angular/material/card';
@@ -35,6 +35,7 @@ import { registerLocaleData } from  '@angular/common';
 import { ForDirective } from './directives/for.directive';
 import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
 import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
+import { RegisterVehicleComponent } from './views/register-vehicle/register-vehicle.component';
 
 registerLocaleData(localePt);
 
@@ -43,7 +44,7 @@ registerLocaleData(localePt);
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NavComponent,
+    // NavComponent,
     HomeComponent,
     ProductCrudComponent,
     ProductCreateComponent,
@@ -53,12 +54,13 @@ registerLocaleData(localePt);
     ForDirective,
     ProductUpdateComponent,
     ProductDeleteComponent,
+    RegisterVehicleComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
+    // MatToolbarModule,
     MatSidenavModule,
     MatListModule,
     MatCardModule,

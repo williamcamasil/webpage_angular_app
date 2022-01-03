@@ -1,4 +1,22 @@
-.home .title {
+.banner {
+    background-color: green;
+    height: 300px;
+    width: 100%;
+}
+
+.about {
+    background-color: blue;
+    height: 300px;
+    width: 100%;
+}
+
+.benefits {
+    background-color: red;
+    height: 300px;
+    width: 100%;
+}
+
+/* .home .title {
     font-size: 3rem;
     font-weight: 300;
     line-height: 1.2;
@@ -6,4 +24,4 @@
 
 .home .subtitle {
     font-size: 1.1rem;
-}
+} */

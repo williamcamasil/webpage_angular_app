@@ -1,23 +1,30 @@
+.container {
+    background-color: #232528;
+}
+
 .header {
     display: flex;
+    justify-content: space-between;
+    height: 200px;
     align-items: center;
+    margin: auto;
+    width: 80%;
 }
 
-.header a {
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.menu {
     display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #333;
+    list-style: none;
 }
 
-.header .logo {
-    max-height: 32px;
-}
-
-.header .title-group {
-    padding-left: 25px;
-}
-
-.header .title-group i {
-    padding-right: 5px;
+.menu a {
+    text-decoration-line: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 60px;
 }

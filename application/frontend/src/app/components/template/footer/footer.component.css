@@ -1,12 +1,8 @@
 .footer {
+    background-color: #232528;
+    height: 268px;
+    /* display: flex;
     position: fixed;
-    bottom: 0;
-
-    display: flex;
-    justify-content: flex-end;
-}
-
-.footer > span {
-    font-size: 1.1rem;
-    font-weight: 300;
+    bottom: 0; */
+    width: 100%;
 }
